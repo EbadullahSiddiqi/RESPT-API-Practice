@@ -73,7 +73,7 @@ app
       if (err) {
         return res.status(500).json({ status: "error", message: err.message });
       }
-      return res.json({ status: "user updated", user: updatedUser });
+      return res.json({ status: "user updated", userID: userIndex });
     });
   });
 
